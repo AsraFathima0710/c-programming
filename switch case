@@ -1,0 +1,25 @@
+#include<stdio.h>
+main()
+{
+printf(" pick your dessert : \n1. almond cookie\n2. cupcake\n3. Tiramisu\n4. ice-cream ");
+int choice=0;
+scanf("%d",&choice);
+
+switch(choice)
+  {
+     case 1 :
+        printf(" you have picked almond cookie");
+        break;
+     case 2 :
+        printf(" you have picked cupcake");
+        break;
+     case 3 :
+        printf(" you have picked Tiramisu");
+        break;
+     case 4 :
+        printf(" you have picked  ice-cream");
+        break;
+     default: printf("sorry, we don't have your favourite dessert");
+  }
+}
+
