@@ -1,0 +1,24 @@
+How do you write a program in C to find the LCM of two numbers using recursion?
+#include <stdio.h> 
+int LCM(int a, int b) 
+{  
+    static int common = 1; 
+ 
+    if (common % a == 0 && common % b == 0) 
+    { 
+        return common; 
+    } 
+    common++; 
+    LCM(a, b); 
+    return common; 
+} 
+ 
+int main() 
+{ 
+    int a, b, result; 
+     
+    scanf("%d%d", &a, &b); 
+    result = LCM(a, b); 
+    printf("The LCM of %d and %d is %d\n", a, b, result); 
+    return 0; 
+} 
